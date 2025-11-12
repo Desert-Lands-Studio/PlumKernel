@@ -1,0 +1,3 @@
+[submodule "pmm"]
+	path = pmm
+	url = git@github.com:Desert-Lands-Studio/pmm.git
