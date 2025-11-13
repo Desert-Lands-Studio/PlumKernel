@@ -80,3 +80,8 @@ pub fn add_thread(thread: Thread) {
 pub fn schedule() -> Option<Thread> {
     SCHEDULER.lock().schedule()
 }
+
+pub fn yield_now() {
+    // Просто передаём управление следующему потоку
+    schedule();
+}
